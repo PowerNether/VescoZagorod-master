@@ -632,18 +632,17 @@ header .headerBottom__call {
           transform: translateY(-50%);
 }
 
-.boxOverlay__prev img {
+.boxOverlay__prev .boxOverlay__prev-icon {
+  display: block;
   width: 13px;
+  height: 22px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-60%, -50%);
       -ms-transform: translate(-60%, -50%);
           transform: translate(-60%, -50%);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  background: url('.././img/arrowSliderIcon.png') 50% no-repeat;
 }
 
 .boxOverlay__next {
@@ -661,18 +660,17 @@ header .headerBottom__call {
           transform: translateY(-50%);
 }
 
-.boxOverlay__next img {
+.boxOverlay__next .boxOverlay__prev-icon {
+  display: block;
   width: 13px;
+  height: 22px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-40%, -50%) rotate(180deg);
       -ms-transform: translate(-40%, -50%) rotate(180deg);
           transform: translate(-40%, -50%) rotate(180deg);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  background: url('.././img/arrowSliderIcon.png') 50% no-repeat;
 }
 
 .boxOverlay__lotBlock {
@@ -716,9 +714,102 @@ header .headerBottom__call {
   padding-right: 95px;
 }
 
-.boxOverlay__icon {
+.boxOverlay__icon-flame {
+  position: relative;
+  padding-left: 26px;
+}
+
+.boxOverlay__icon-flame::before {
   width: 18px;
   height: 18px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: url('.././img/flameIcon.png') 50% no-repeat;
+  background-size: cover;
+}
+
+.boxOverlay__icon-disc {
+  position: relative;
+  padding-left: 26px;
+}
+
+.boxOverlay__icon-disc::before {
+  width: 18px;
+  height: 18px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: url('.././img/discountIcon.png') 50% no-repeat;
+  background-size: cover;
+}
+
+.boxOverlay__icon-pin {
+  position: relative;
+  padding-left: 26px;
+}
+
+.boxOverlay__icon-pin::before {
+  width: 18px;
+  height: 18px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: url('.././img/pinIcon.png') 50% no-repeat;
+  background-size: cover;
+}
+
+.boxOverlay__icon-iframe {
+  position: relative;
+  padding-left: 26px;
+}
+
+.boxOverlay__icon-iframe::before {
+  width: 18px;
+  height: 18px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: url('.././img/iframeIcon.png') 50% no-repeat;
+  background-size: cover;
+}
+
+.boxOverlay__icon-camera {
+  position: relative;
+  padding-left: 26px;
+}
+
+.boxOverlay__icon-camera::before {
+  width: 18px;
+  height: 18px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: url('.././img/cameraIcon.png') 50% no-repeat;
+  background-size: cover;
+}
+
+.boxOverlay__icon-maximize {
+  width: 18px;
+  height: 18px;
+  background: url('.././img/maximizeIcon.png') 50% no-repeat;
+  background-size: cover;
+}
+.boxOverlay__icon-heart {
+  width: 18px;
+  height: 18px;
+  background: url('.././img/heartIcon.png') 50% no-repeat;
+  background-size: cover;
 }
 
 .boxOverlay__tag {
@@ -756,7 +847,6 @@ header .headerBottom__call {
 }
 
 .boxOverlay__text {
-  margin-left: 8px;
   font-size: 15px;
   line-height: 18px;
 }
@@ -991,6 +1081,19 @@ header .headerBottom__call {
   margin-right: 8px;
 }
 
+.mainInfo__icon-pin {
+  width: 16px;
+  height: 16px;
+  background: url('.././img/pinBlue.png') 50% center;
+  margin-right: 8px;
+}
+.mainInfo__icon-bell {
+  width: 16px;
+  height: 16px;
+  background: url('.././img/bellGreen.png') 50% center;
+  margin-right: 8px;
+}
+
 .mainDesc {
   margin: 0 -8px 16px;
   display: -webkit-box;
@@ -1010,16 +1113,35 @@ header .headerBottom__call {
 }
 
 .mainDesc__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 8px;
   font-weight: bold;
   font-size: 36px;
   line-height: 43px;
+}
+
+.mainDesc__title-bed {
+  padding-left: 54px;
+  position: relative;
+}
+
+.mainDesc__title-bed::before {
+  content: "";
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  background: url('.././img/doubleBed.png') 50% no-repeat;
+  background-size: cover;
+}
+
+.mainDesc__title-shield {
+  display: block;
+  width: 38px;
+  height: 38px;
+  background: url('.././img/shieldOk.png') 50% no-repeat;
+  background-size: cover;
 }
 
 .mainDesc__text {
@@ -1061,15 +1183,57 @@ header .headerBottom__call {
           align-items: center;
   color: #171717;
   padding-right: 36px;
+  padding-left: 28px;
   margin-right: 36px;
   border-right: 1px solid #F1F1F1;
+  position: relative;
 }
 
-.mainFeatures__icon {
-  margin-right: 8px;
+.mainFeatures__icon-pool::before {
+  content: '';
   width: 20px;
   height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: url('.././img/hotPool.png') 50% no-repeat;
+  background-size: cover;
 }
+.mainFeatures__icon-window::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: url('.././img/window.png') 50% no-repeat;
+  background-size: cover;
+}
+.mainFeatures__icon-trees::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: url('.././img/trees.png') 50% no-repeat;
+  background-size: cover;
+}
+.mainFeatures__icon-sunset::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: url('.././img/sunset.png') 50% no-repeat;
+  background-size: cover;
+}
+
 
 .mainFeatures__body {
   border-top: 3px solid #F1F1F1;
@@ -1243,6 +1407,13 @@ header .headerBottom__call {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.layout__zoom-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url('.././img/zoomIn.png') 50% no-repeat;
+  background-size: cover;
 }
 
 .layout__title {
@@ -1756,9 +1927,12 @@ header .headerBottom__call {
           align-items: center;
 }
 
-.broker__unhide img {
+.broker__unhide-eye {
+  display: block;
   width: 22px;
   height: 22px;
+  background: url('.././img/eyeGreen.png') 50% no-repeat;
+  background-size: cover;
 }
 
 .broker__number {
@@ -1851,7 +2025,12 @@ header .headerBottom__call {
 }
 
 .present__icon {
+  display: block;
+  width: 16px;
+  height: 16px;
   margin-right: 10px;
+  background: url('.././img/fileDownload.png') 50% no-repeat;
+  background-size: cover;
 }
 
 .present__links {
@@ -1882,8 +2061,25 @@ header .headerBottom__call {
 }
 
 .present__image {
+  display: block;
   width: 20px;
   height: 20px;
+}
+.present__image-mail {
+  background: url('.././img/mail.png') 50% no-repeat;
+  background-size: cover;
+}
+.present__image-telegram {
+  background: url('.././img/telegram.png') 50% no-repeat;
+  background-size: cover;
+}
+.present__image-viber{
+  background: url('.././img/viber.png') 50% no-repeat;
+  background-size: cover;
+}
+.present__image-whatsapp {
+  background: url('.././img/whatsapp.png') 50% no-repeat;
+  background-size: cover;
 }
 
 .discount {
@@ -2039,9 +2235,12 @@ header .headerBottom__call {
   margin-right: 4px;
 }
 
-.object__prev img {
-  max-width: 10px;
-  width: 100%;
+.object__prev-icon {
+  display: block;
+  width: 10px;
+  height: 17px;
+  background: url('.././img/arrowSliderIcon.png') 50% no-repeat;
+  background-size: cover;
   -webkit-filter: invert(1);
           filter: invert(1);
 }
@@ -2062,12 +2261,16 @@ header .headerBottom__call {
   border: 1px solid #EEEEEE;
 }
 
-.object__next img {
+
+.object__next-icon {
+  display: block;
+  width: 10px;
+  height: 17px;
+  background: url('.././img/arrowSliderIcon.png') 50% no-repeat;
+  background-size: cover;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  max-width: 10px;
-  width: 100%;
   -webkit-filter: invert(1);
           filter: invert(1);
 }
@@ -2147,9 +2350,19 @@ header .headerBottom__call {
   background: rgba(0, 0, 0, 0.8);
 }
 
-.object__tag img {
+.object__tag-disc {
+  display: block;
   width: 20px;
   height: 20px;
+  background: url('.././img/discountIcon.png') 50% no-repeat;
+  background-size: cover;
+}
+.object__tag-flame {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('.././img/flameIcon.png') 50% no-repeat;
+  background-size: cover;
 }
 
 .object .tns-nav {
@@ -2307,7 +2520,7 @@ header .headerBottom__call {
   border: 0;
 }
 
-.form__radio input:checked ~ .form__image img {
+.form__radio input:checked ~ .form__image span {
   opacity: 1;
 }
 
@@ -2345,12 +2558,37 @@ header .headerBottom__call {
           justify-content: center;
 }
 
-.form__image img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.form__image-phone {
+  display: block;
   opacity: 0.3;
   width: 24px;
   height: 24px;
+  background: url('.././img/callPhone.png') 50% no-repeat;
+  background-size: cover;
+}
+.form__image-telegram {
+  display: block;
+  opacity: 0.3;
+  width: 24px;
+  height: 24px;
+  background: url('.././img/telegram2.png') 50% no-repeat;
+  background-size: cover;
+}
+.form__image-viber {
+  display: block;
+  opacity: 0.3;
+  width: 24px;
+  height: 24px;
+  background: url('.././img/viber2.png') 50% no-repeat;
+  background-size: cover;
+}
+.form__image-whatsapp {
+  display: block;
+  opacity: 0.3;
+  width: 24px;
+  height: 24px;
+  background: url('.././img/whatsapp2.png') 50% no-repeat;
+  background-size: cover;
 }
 
 .form__text {
@@ -2453,9 +2691,12 @@ header .headerBottom__call {
   margin-right: 4px;
 }
 
-.around__prev img {
-  max-width: 10px;
-  width: 100%;
+.around__prev-icon {
+  display: block;
+  width: 10px;
+  height: 17px;
+  background: url('.././img/arrowSliderIcon.png') 50% no-repeat;
+  background-size: cover;
   -webkit-filter: invert(1);
           filter: invert(1);
 }
@@ -2476,12 +2717,15 @@ header .headerBottom__call {
   border: 1px solid #EEEEEE;
 }
 
-.around__next img {
+.around__next-icon {
+  display: block;
+  width: 10px;
+  height: 17px;
+  background: url('.././img/arrowSliderIcon.png') 50% no-repeat;
+  background-size: cover;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  max-width: 10px;
-  width: 100%;
   -webkit-filter: invert(1);
           filter: invert(1);
 }

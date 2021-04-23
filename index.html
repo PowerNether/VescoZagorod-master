@@ -89,40 +89,37 @@
     </div>
     <div class="boxOverlay">
       <div class="w-page">
-        <div class="boxOverlay__prev"><img src="./img/arrowSliderIcon.png" alt="prev" /></div>
-        <div class="boxOverlay__next"><img src="./img/arrowSliderIcon.png" alt="next" /></div>
+        <div class="boxOverlay__prev"><span class="boxOverlay__prev-icon"></span></div>
+        <div class="boxOverlay__next"><span class="boxOverlay__prev-icon"></span></div>
         <div class="boxOverlay__lotBlock">
           <p class="boxOverlay__lotText">Лот №90436</p>
         </div>
         <div class="boxOverlay__wrapper">
           <div class="boxOverlay__wrapper-top">
-            <div class="boxOverlay__tag boxOverlay__tag-black"><img class="boxOverlay__icon" src="./img/flameIcon.png"
-                alt="Flame" />
-              <p class="boxOverlay__text">Эксклюзив</p>
+            <div class="boxOverlay__tag boxOverlay__tag-black">
+              <p class="boxOverlay__text boxOverlay__icon-flame">Эксклюзив</p>
             </div>
-            <div class="boxOverlay__tag boxOverlay__tag-black last"><img class="boxOverlay__icon"
-                src="./img/discountIcon.png" alt="discount" />
-              <p class="boxOverlay__text">Снижена цена</p>
+            <div class="boxOverlay__tag boxOverlay__tag-black last">
+              <p class="boxOverlay__text boxOverlay__icon-disc">Снижена цена</p>
             </div>
-            <div class="boxOverlay__tag boxOverlay__tag-black boxOverlay__tag-minimize last"><img
-                class="boxOverlay__icon" src="./img/maximizeIcon.png" alt="Minimize"
-                data-src="./img/sliderItem1.png, ./img/sliderItem3.png, ./img/sliderItem2.png" /></div>
+            <div class="boxOverlay__tag boxOverlay__tag-black boxOverlay__tag-minimize last">
+              <span class="boxOverlay__icon-maximize"
+                data-src="./img/sliderItem1.png, ./img/sliderItem3.png, ./img/sliderItem2.png"></span>
+            </div>
           </div>
           <div class="boxOverlay__wrapper-bottom">
-            <div class="boxOverlay__tag boxOverlay__tag-white"><img class="boxOverlay__icon" src="./img/pinIcon.png"
-                alt="Pin" />
-              <p class="boxOverlay__text">На карте</p>
+            <div class="boxOverlay__tag boxOverlay__tag-white">
+              <p class="boxOverlay__text boxOverlay__icon-pin">На карте</p>
             </div>
-            <div class="boxOverlay__tag boxOverlay__tag-white"><img class="boxOverlay__icon" src="./img/iframeIcon.png"
-                alt="iFrame" />
-              <p class="boxOverlay__text">Планировка</p>
+            <div class="boxOverlay__tag boxOverlay__tag-white">
+              <p class="boxOverlay__text boxOverlay__icon-iframe">Планировка</p>
             </div>
-            <div class="boxOverlay__tag boxOverlay__tag-white last"><img class="boxOverlay__icon"
-                src="./img/cameraIcon.png" alt="Camera" />
-              <p class="boxOverlay__text">Фото</p>
+            <div class="boxOverlay__tag boxOverlay__tag-white last">
+              <p class="boxOverlay__text boxOverlay__icon-camera">Фото</p>
             </div>
-            <div class="boxOverlay__tag boxOverlay__tag-white boxOverlay__tag-heart last"><img class="boxOverlay__icon"
-                src="./img/heartIcon.png" alt="Heart" /></div>
+            <div class="boxOverlay__tag boxOverlay__tag-white boxOverlay__tag-heart last">
+              <span class="boxOverlay__icon-heart"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -151,10 +148,14 @@
           <div class="mainInfo__street">
             <p class="mainInfo__adress">Мытищинский район, Сорокино Осташковское шоссе, ~ 20 км</p>
             <div class="mainInfo__btns">
-              <button class="mainInfo__sell modal-trigger" data-target="modal1"><img class="mainInfo__icon"
-                  src="./img/pinBlue.png" alt="pin" /> Продать объект в этом поселке</button>
-              <button class="mainInfo__subscribe modal-trigger" data-target="modal2"><img class="mainInfo__icon"
-                  src="./img/bellGreen.png" alt="bell" /> Следить за ценой</button>
+              <button class="mainInfo__sell modal-trigger" data-target="modal1">
+                <span class="mainInfo__icon-pin"></span>
+                Продать объект в этом поселке
+              </button>
+              <button class="mainInfo__subscribe modal-trigger" data-target="modal2">
+                <span class="mainInfo__icon-bell"></span>
+                Следить за ценой
+              </button>
             </div>
           </div>
         </div>
@@ -168,24 +169,30 @@
             <p class="mainDesc__text">Площадь всего участка</p>
           </div>
           <div class="mainDesc__item">
-            <h4 class="mainDesc__title"><img class="mainDesc__icon" src="./img/doubleBed.png" alt="shield" /> 4</h4>
+            <h4 class="mainDesc__title mainDesc__title-bed">4</h4>
             <p class="mainDesc__text">Количество спален</p>
           </div>
           <div class="mainDesc__item">
-            <h4 class="mainDesc__title"><img class="mainDesc__icon" src="./img/shieldOk.png" alt="shield" /></h4>
+            <h4 class="mainDesc__title">
+              <span class="mainDesc__title-shield"></span>
+            </h4>
             <p class="mainDesc__text">Охраняемый посёлок</p>
           </div>
         </div>
         <div class="mainFeatures">
           <div class="mainFeatures__head">
-            <p class="mainFeatures__text"><img class="mainFeatures__icon" src="./img/hotPool.png" alt="pool" /> Бассейн
+            <p class="mainFeatures__text mainFeatures__icon-pool">
+              Бассейн
             </p>
-            <p class="mainFeatures__text"><img class="mainFeatures__icon" src="./img/window.png" alt="window" />
-              Панорамные окна</p>
-            <p class="mainFeatures__text"><img class="mainFeatures__icon" src="./img/trees.png" alt="trees" /> Лесной
-              участок</p>
-            <p class="mainFeatures__text"><img class="mainFeatures__icon" src="./img/sunset.png" alt="shield" /> Дом у
-              воды</p>
+            <p class="mainFeatures__text mainFeatures__icon-window">
+              Панорамные окна
+            </p>
+            <p class="mainFeatures__text mainFeatures__icon-trees">
+              Лесной участок
+            </p>
+            <p class="mainFeatures__text mainFeatures__icon-sunset">
+              Дом у воды
+            </p>
             <button class="accardion__btn"></button>
           </div>
           <div class="mainFeatures__body accardion__body">
@@ -196,8 +203,9 @@
           </div>
         </div>
         <div class="character">
-          <div class="sidebarMenu"><a class="sidebarMenu__item sidebarMenu__item-active"
-              href="#character">характеристики</a><a class="sidebarMenu__item" href="#communication">коммуникации</a>
+          <div class="sidebarMenu">
+            <a class="sidebarMenu__item sidebarMenu__item-active" href="#character">характеристики</a>
+            <a class="sidebarMenu__item" href="#communication">коммуникации</a>
           </div>
           <div class="character__elem siderbarTab siderbarTab-active" id="character">
             <div class="character__item">
@@ -284,7 +292,9 @@
                 <div class="layout__zoomIn"><img class="layout__image" src="./img/firstFloor.png" alt="firstfloor"
                     data-src="./img/firstFloor.png" /></div>
                 <div class="layout__overlay">
-                  <div class="layout__zoom"><img src="./img/zoomIn.png" alt="zoom" /></div>
+                  <div class="layout__zoom">
+                    <span class="layout__zoom-icon"></span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -508,20 +518,36 @@
           <h3 class="broker__title">Яна Плотникова</h3>
           <p class="broker__time">Ежедневно с 10 до 20</p>
           <div class="broker__phone"><a class="broker__number" href="tel:+749521515XX">+7 (495) 215-15-XX</a>
-            <div class="broker__unhide"><img src="./img/eyeGreen.png" alt="Показать" /></div>
+            <div class="broker__unhide">
+              <span class="broker__unhide-eye"></span>
+            </div>
           </div>
-          <button class="btn btn-black">Хочу на просмотр!</button><a class="broker__link" href="#">Все объекты
-            брокера</a>
+          <button class="btn btn-black">Хочу на просмотр!</button>
+          <a class="broker__link" href="#">
+            Все объекты брокера
+          </a>
         </div>
         <div class="present">
           <h3 class="present__title">Получите PDF презентацию об объекте удобным вам способом</h3>
-          <p class="present__date">Обновлено 05.06.2020</p><a class="present__download" href="#"><img
-              class="present__icon" src="./img/fileDownload.png" alt="file" /> Скачать презентацию</a>
-          <div class="present__links"><a class="present__link" href="#"><img class="present__image" src="./img/mail.png"
-                alt="mail" /></a><a class="present__link" href="#"><img class="present__image" src="./img/telegram.png"
-                alt="telegram" /></a><a class="present__link" href="#"><img class="present__image" src="./img/viber.png"
-                alt="viber" /></a><a class="present__link" href="#"><img class="present__image" src="./img/whatsapp.png"
-                alt="whatsapp" /></a></div>
+          <p class="present__date">Обновлено 05.06.2020</p>
+          <a class="present__download" href="#">
+            <span class="present__icon"></span>
+            Скачать презентацию
+          </a>
+          <div class="present__links">
+            <a class="present__link" href="#">
+              <span class="present__image present__image-mail"></span>
+            </a>
+            <a class="present__link" href="#">
+              <span class="present__image present__image-telegram"></span>
+            </a>
+            <a class="present__link" href="#">
+              <span class="present__image present__image-viber"></span>
+            </a>
+            <a class="present__link" href="#">
+              <span class="present__image present__image-whatsapp"></span>
+            </a>
+          </div>
         </div>
         <div class="discount">
           <p class="discount__tag">распродажа</p>
@@ -549,7 +575,8 @@
           <p class="village__text">объекта в продаже в данном посёлке</p>
         </div>
       </div>
-      <div class="article"><img class="article__image" src="./img/article.png" alt="article" />
+      <div class="article">
+        <img class="article__image" src="./img/article.png" alt="article" />
         <div class="article__overlay">
           <p class="article__tag">Блог</p>
           <h3 class="article__title">Нефть, коронавирус и солнышко разогрели спрос на загородные дома</h3>
@@ -563,20 +590,29 @@
           href="#similarSlider">похожие объекты</a><a class="sidebarMenu__item object__tab" href="#aroundSlider">объекты
           рядом</a>
         <div class="object__controls">
-          <div class="object__prev"><img src="./img/arrowSliderIcon.png" alt="prev" /></div>
-          <div class="object__next"><img src="./img/arrowSliderIcon.png" alt="next" /></div>
+          <div class="object__prev">
+            <span class="object__prev-icon"></span>
+          </div>
+          <div class="object__next">
+            <span class="object__next-icon"></span>
+          </div>
         </div>
       </div>
       <div class="object__elem siderbarTab siderbarTab-active" id="villageSlider">
         <div class="object__slider villageSlider object__slider-active">
           <div class="object__item">
             <div class="object__image">
-              <div class="object__sliderInner"><img src="./img/objectSliderItem1.png" alt="item1" /><img
-                  src="./img/objectSliderItem2.png" alt="item1" /><img src="./img/objectSliderItem3.png"
-                  alt="item1" /><img src="./img/objectSliderItem1.png" alt="item1" /><img
-                  src="./img/objectSliderItem2.png" alt="item1" /></div>
+              <div class="object__sliderInner">
+                <img src="./img/objectSliderItem1.png" alt="item1" />
+                <img src="./img/objectSliderItem2.png" alt="item1" />
+                <img src="./img/objectSliderItem3.png" alt="item1" />
+                <img src="./img/objectSliderItem1.png" alt="item1" />
+                <img src="./img/objectSliderItem2.png" alt="item1" />
+              </div>
               <div class="object__overlay">
-                <div class="object__tag"><img src="./img/discountIcon.png" alt="flame" /></div>
+                <div class="object__tag">
+                  <span class="object__tag-disc"></span>
+                </div>
                 <div class="object__nav">
                   <div class="object__navItem object__navItem-active"></div>
                   <div class="object__navItem"></div>
@@ -599,12 +635,17 @@
           </div>
           <div class="object__item">
             <div class="object__image">
-              <div class="object__sliderInner"><img src="./img/objectSliderItem1.png" alt="item1" /><img
-                  src="./img/objectSliderItem2.png" alt="item1" /><img src="./img/objectSliderItem3.png"
-                  alt="item1" /><img src="./img/objectSliderItem1.png" alt="item1" /><img
-                  src="./img/objectSliderItem2.png" alt="item1" /></div>
+              <div class="object__sliderInner">
+                <img src="./img/objectSliderItem1.png" alt="item1" />
+                <img src="./img/objectSliderItem2.png" alt="item1" />
+                <img src="./img/objectSliderItem3.png" alt="item1" />
+                <img src="./img/objectSliderItem1.png" alt="item1" />
+                <img src="./img/objectSliderItem2.png" alt="item1" />
+              </div>
               <div class="object__overlay">
-                <div class="object__tag"><img src="./img/flameIcon.png" alt="flame" /></div>
+                <div class="object__tag">
+                  <span class="object__tag-flame"></span>
+                </div>
                 <div class="object__nav">
                   <div class="object__navItem object__navItem-active"></div>
                   <div class="object__navItem"></div>
@@ -999,22 +1040,30 @@
           <div class="form__radios">
             <div class="form__radio">
               <input type="radio" name="typeSocial" value="Phone" required="required" checked="checked" />
-              <div class="form__image form__image-green"><img src="./img/callPhone.png" alt="phone" /></div>
+              <div class="form__image form__image-green">
+                <span class="form__image-phone"></span>
+              </div>
               <p class="form__text">Звонок</p>
             </div>
             <div class="form__radio">
               <input type="radio" name="typeSocial" value="Telegram" required="required" />
-              <div class="form__image form__image-blue"><img src="./img/telegram2.png" alt="" /></div>
+              <div class="form__image form__image-blue">
+                <span class="form__image-telegram"></span>
+              </div>
               <p class="form__text">Telegram</p>
             </div>
             <div class="form__radio">
               <input type="radio" name="typeSocial" value="Viber" required="required" />
-              <div class="form__image form__image-purple"><img src="./img/viber2.png" alt="viber" /></div>
+              <div class="form__image form__image-purple">
+                <span class="form__image-viber"></span>
+              </div>
               <p class="form__text">Viber</p>
             </div>
             <div class="form__radio">
               <input type="radio" name="typeSocial" value="WhatsApp" required="required" />
-              <div class="form__image form__image-green"><img src="./img/whatsapp2.png" alt="" /></div>
+              <div class="form__image form__image-green">
+                <span class="form__image-whatsapp"></span>
+              </div>
               <p class="form__text">WhatsApp</p>
             </div>
           </div>
@@ -1029,12 +1078,21 @@
     <div class="around">
       <div class="sidebarMenu">
         <h3 class="subtitle">посёлки рядом</h3>
-        <div class="around__tabs"><a class="around__tab around__tab-active" href="#km5">5 км</a><a class="around__tab"
-            href="#km10">10 км</a><a class="around__tab" href="#km15">15 км</a><a class="around__tab" href="#km20">20
-            км</a><a class="around__tab" href="#km25">25 км</a><a class="around__tab" href="#km30">30 км</a></div>
+        <div class="around__tabs">
+          <a class="around__tab around__tab-active" href="#km5">5 км</a>
+          <a class="around__tab" href="#km10">10 км</a>
+          <a class="around__tab" href="#km15">15 км</a>
+          <a class="around__tab" href="#km20">20 км</a>
+          <a class="around__tab" href="#km25">25 км</a>
+          <a class="around__tab" href="#km30">30 км</a>
+        </div>
         <div class="around__controls">
-          <div class="around__prev"><img src="./img/arrowSliderIcon.png" alt="prev" /></div>
-          <div class="around__next"><img src="./img/arrowSliderIcon.png" alt="next" /></div>
+          <div class="around__prev">
+            <span class="around__prev-icon"></span>
+          </div>
+          <div class="around__next">
+            <span class="around__next-icon"></span>
+          </div>
         </div>
       </div>
       <div class="around__elem">
