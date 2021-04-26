@@ -8,6 +8,7 @@ var slider = tns({
   fixedWidth: 864,
   prevButton: ".boxOverlay__prev",
   nextButton: ".boxOverlay__next",
+  mouseDrag: true
 });
 var km5 = tns({
   container: ".km5",
@@ -175,6 +176,6 @@ $(".p-unhide").on("click tap", function (e) {
 });
 $(".layout__zoomIn").lightGallery();
 $(".boxSlider").lightGallery();
-$(document).ready(function(){
+$(document).ready(function () {
   $('.modal').modal();
 });
