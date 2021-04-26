@@ -179,7 +179,7 @@ $('.boxSlider').lightGallery();
 $(document).ready(function () {
   $('.modal').modal();
 });
-$('.headerBottom__mobileLogo').on('click', function () {
+$(document).on('click', '.headerBottom__mobileLogo', function () {
   if (!$(".overlay").length) {
     $('body').append($('<div class="overlay" style="background: rgba(0,0,0,.8); z-index: 1; opacity: 0; top: 0px; width: 100%; height: 100%; position: fixed;" />'))
     $('.overlay').fadeTo(400, 1)
@@ -190,11 +190,13 @@ $('.headerBottom__mobileLogo').on('click', function () {
     $(".vesco-block>.menu").slideToggle()
   }
 })
-$(document).on('click', '.overlay', function () {
-  $('.overlay').fadeOut()
-  setTimeout(function () {
-    $('.overlay').remove()
-    $('header').css({ 'z-index': '1', 'position': 'relative' })
-  }, 400)
-  $(".vesco-block>.menu").slideToggle()
+$(document).on('click', function (e) {
+  if (!$('.headerBottom__mobileLogo').is(e.target) & !$('a').is(e.target) & $(".overlay").length) {
+    $('.overlay').fadeOut()
+    setTimeout(function () {
+      $('.overlay').remove()
+      $('header').css({ 'z-index': '1', 'position': 'relative' })
+    }, 400)
+    $(".vesco-block>.menu").slideToggle()
+  }
 })

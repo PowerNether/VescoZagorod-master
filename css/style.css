@@ -575,6 +575,7 @@ header .vesco-block {
     line-height: 60px;
     padding: 0 15px;
     position: relative;
+    cursor: pointer;
 }
 .vesco-block ul {
     display: none;
