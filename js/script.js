@@ -70,18 +70,15 @@ var km30 = tns({
   nextButton: ".around__next",
   mouseDrag: true,
 });
-[].forEach.call(
-  document.querySelectorAll(".object__sliderInner"),
-  function (el) {
-    tns({
-      container: el,
-      items: 1,
-      nav: true,
-      nested: "outer",
-      controls: false,
-    });
-  }
-);
+[].forEach.call(document.querySelectorAll(".object__sliderInner"), function (el) {
+  tns({
+    container: el,
+    items: 1,
+    nav: true,
+    nested: "outer",
+    controls: false,
+  });
+});
 var villageSlider = tns({
   container: ".villageSlider",
   fixedWidth: 304,
@@ -181,22 +178,14 @@ $(document).ready(function () {
 });
 $(document).on("click", ".headerBottom__mobileLogo", function () {
   if (!$(".overlay").length) {
-    $("body").append(
-      $(
-        '<div class="overlay" style="background: rgba(0,0,0,.8); z-index: 1; opacity: 0; top: 0px; width: 100%; height: 100%; position: fixed;" />'
-      )
-    );
+    $("body").append($('<div class="overlay" style="background: rgba(0,0,0,.8); z-index: 1; opacity: 0; top: 0px; width: 100%; height: 100%; position: fixed;" />'));
     $(".overlay").fadeTo(400, 1);
     $("header").addClass("vesco-block__open");
     $(".vesco-block>.menu").slideToggle();
   }
 });
 $(document).on("click", function (e) {
-  if (
-    !$(".headerBottom__mobileLogo").is(e.target) &
-    !$("a").is(e.target) &
-    $(".overlay").length
-  ) {
+  if (!$(".headerBottom__mobileLogo").is(e.target) & !$("a").is(e.target) & $(".overlay").length) {
     $(".overlay").fadeOut();
     setTimeout(function () {
       $(".overlay").remove();
