@@ -123,10 +123,7 @@ $(".object__tab").on("click tap", function (e) {
   e.preventDefault();
   let tab = $(this).attr("href").slice(1);
   $(".object__slider").removeClass("object__slider-active");
-  $(this)
-    .parents()
-    .find("." + tab)
-    .addClass("object__slider-active");
+  $(this).parents().find("." + tab).addClass("object__slider-active");
   eval(tab).goTo(0);
 });
 $(".around__tab").on("click tap", function (e) {
@@ -135,10 +132,7 @@ $(".around__tab").on("click tap", function (e) {
   $(this).addClass("around__tab-active");
   let tab = $(this).attr("href").slice(1);
   $(".around__slider").removeClass("around__slider-active");
-  $(this)
-    .parents()
-    .find("." + tab)
-    .addClass("around__slider-active");
+  $(this).parents().find("." + tab).addClass("around__slider-active");
   eval(tab).goTo(0);
 });
 $(".sidebarMenu__item").on("click tap", function (e) {
