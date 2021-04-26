@@ -187,9 +187,6 @@ $(document).on("click", ".headerBottom__mobileLogo", function () {
       )
     );
     $(".overlay").fadeTo(400, 1);
-    setTimeout(function () {
-      $(".overlay").css("opacity", "1");
-    }, 400);
     $("header").addClass("vesco-block__open");
     $(".vesco-block>.menu").slideToggle();
   }
