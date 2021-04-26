@@ -1,117 +1,140 @@
-var slider = tns({
-  startIndex: 1,
-  container: '.boxSlider',
-  items: 1,
-  gutter: 4,
-  center: true,
-  nav: false,
-  fixedWidth: 864,
-  prevButton: '.boxOverlay__prev',
-  nextButton: '.boxOverlay__next',
-  mouseDrag: true,
-});
-var km5 = tns({
-  container: '.km5',
-  fixedWidth: 304,
-  items: 3.5,
-  gutter: 32,
-  nav: false,
-  prevButton: '.around__prev',
-  nextButton: '.around__next',
-  mouseDrag: true,
-});
-var km10 = tns({
-  container: '.km10',
-  fixedWidth: 304,
-  items: 3.5,
-  gutter: 32,
-  nav: false,
-  prevButton: '.around__prev',
-  nextButton: '.around__next',
-  mouseDrag: true,
-});
-var km15 = tns({
-  container: '.km15',
-  fixedWidth: 304,
-  items: 3.5,
-  gutter: 32,
-  nav: false,
-  prevButton: '.around__prev',
-  nextButton: '.around__next',
-  mouseDrag: true,
-});
-var km20 = tns({
-  container: '.km20',
-  fixedWidth: 304,
-  items: 3.5,
-  gutter: 32,
-  nav: false,
-  prevButton: '.around__prev',
-  nextButton: '.around__next',
-  mouseDrag: true,
-});
-var km25 = tns({
-  container: '.km25',
-  fixedWidth: 304,
-  items: 3.5,
-  gutter: 32,
-  nav: false,
-  prevButton: '.around__prev',
-  nextButton: '.around__next',
-  mouseDrag: true,
-});
-var km30 = tns({
-  container: '.km30',
-  fixedWidth: 304,
-  items: 3.5,
-  gutter: 32,
-  nav: false,
-  prevButton: '.around__prev',
-  nextButton: '.around__next',
-  mouseDrag: true,
-});
-[].forEach.call(document.querySelectorAll('.object__sliderInner'), function (el) {
-  tns({
-    container: el,
+if ($('.boxSlider').length) {
+  var slider = tns({
+    startIndex: 1,
+    container: '.boxSlider',
     items: 1,
-    nav: true,
-    nested: 'outer',
-    controls: false,
+    gutter: 4,
+    center: true,
+    nav: false,
+    fixedWidth: 864,
+    prevButton: '.boxOverlay__prev',
+    nextButton: '.boxOverlay__next',
+    mouseDrag: true,
   });
-});
-var villageSlider = tns({
-  container: '.villageSlider',
-  fixedWidth: 304,
-  items: 3.5,
-  gutter: 32,
-  nav: false,
-  prevButton: '.object__prev',
-  nextButton: '.object__next',
-  nested: 'inner',
-  mouseDrag: true,
-});
-var similarSlider = tns({
-  container: '.similarSlider',
-  fixedWidth: 304,
-  items: 3.5,
-  gutter: 32,
-  nav: false,
-  prevButton: '.object__prev',
-  nextButton: '.object__next',
-  nested: 'inner',
-  mouseDrag: true,
-});
-var aroundSlider = tns({
-  container: '.aroundSlider',
-  fixedWidth: 304,
-  items: 3.5,
-  gutter: 32,
-  nav: false,
-  prevButton: '.object__prev',
-  nextButton: '.object__next',
-  nested: 'inner',
-  mouseDrag: true,
-});
+};
+if ($('.km5').length) {
+  var km5 = tns({
+    container: '.km5',
+    fixedWidth: 304,
+    items: 3.5,
+    gutter: 32,
+    nav: false,
+    prevButton: '.around__prev',
+    nextButton: '.around__next',
+    mouseDrag: true,
+  });
+};
+if ($('.km10').length) {
+  var km10 = tns({
+    container: '.km10',
+    fixedWidth: 304,
+    items: 3.5,
+    gutter: 32,
+    nav: false,
+    prevButton: '.around__prev',
+    nextButton: '.around__next',
+    mouseDrag: true,
+  });
+};
+if ($('.km15').length) {
+  var km15 = tns({
+    container: '.km15',
+    fixedWidth: 304,
+    items: 3.5,
+    gutter: 32,
+    nav: false,
+    prevButton: '.around__prev',
+    nextButton: '.around__next',
+    mouseDrag: true,
+  });
+};
+if ($('.km20').length) {
+  var km20 = tns({
+    container: '.km20',
+    fixedWidth: 304,
+    items: 3.5,
+    gutter: 32,
+    nav: false,
+    prevButton: '.around__prev',
+    nextButton: '.around__next',
+    mouseDrag: true,
+  });
+};
+if ($('.km25').length) {
+  var km25 = tns({
+    container: '.km25',
+    fixedWidth: 304,
+    items: 3.5,
+    gutter: 32,
+    nav: false,
+    prevButton: '.around__prev',
+    nextButton: '.around__next',
+    mouseDrag: true,
+  });
+};
+if ($('.km30').length) {
+  var km30 = tns({
+    container: '.km30',
+    fixedWidth: 304,
+    items: 3.5,
+    gutter: 32,
+    nav: false,
+    prevButton: '.around__prev',
+    nextButton: '.around__next',
+    mouseDrag: true,
+  });
+};
+if ($('.object__sliderInner').length) {
+  [].forEach.call(document.querySelectorAll('.object__sliderInner'), function (el) {
+    tns({
+      container: el,
+      items: 1,
+      nav: true,
+      nested: 'outer',
+      controls: false,
+    });
+  });
+};
+if ($('.villageSlider').length) {
+  var villageSlider = tns({
+    container: '.villageSlider',
+    fixedWidth: 304,
+    items: 3.5,
+    gutter: 32,
+    nav: false,
+    prevButton: '.object__prev',
+    nextButton: '.object__next',
+    nested: 'inner',
+    mouseDrag: true,
+  });
+};
+if ($('.similarSlider').length) {
+  var similarSlider = tns({
+    container: '.similarSlider',
+    fixedWidth: 304,
+    items: 3.5,
+    gutter: 32,
+    nav: false,
+    prevButton: '.object__prev',
+    nextButton: '.object__next',
+    nested: 'inner',
+    mouseDrag: true,
+  });
+};
+if ($('.aroundSlider').length) {
+  var aroundSlider = tns({
+    container: '.aroundSlider',
+    fixedWidth: 304,
+    items: 3.5,
+    gutter: 32,
+    nav: false,
+    prevButton: '.object__prev',
+    nextButton: '.object__next',
+    nested: 'inner',
+    mouseDrag: true,
+  });
+};
+
 $('.broker__unhide').on('click tap', function () {
   $(this).hide();
 });
