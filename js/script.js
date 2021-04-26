@@ -186,7 +186,7 @@ $(document).on('click', '.headerBottom__mobileLogo', function () {
     setTimeout(function () {
       $('.overlay').css('opacity', '1')
     }, 400)
-    $('header').css({ 'z-index': '5', 'position': 'relative' })
+    $('header').addClass('vesco-block__open')
     $(".vesco-block>.menu").slideToggle()
   }
 })
@@ -195,7 +195,7 @@ $(document).on('click', function (e) {
     $('.overlay').fadeOut()
     setTimeout(function () {
       $('.overlay').remove()
-      $('header').css({ 'z-index': '1', 'position': 'relative' })
+      $('header').removeClass('vesco-block__open')
     }, 400)
     $(".vesco-block>.menu").slideToggle()
   }

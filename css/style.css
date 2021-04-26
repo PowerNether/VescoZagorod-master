@@ -577,6 +577,12 @@ header .vesco-block {
     position: relative;
     cursor: pointer;
 }
+
+header.vesco-block__open {
+    z-index: 5;
+    position: relative; 
+}
+
 .vesco-block ul {
     display: none;
     width: 140px;
