@@ -433,6 +433,9 @@
 }
 
 @media screen and (max-width: 425px) {
+  .layout .layout__link {
+    margin-top: 16px;
+  }
   .video__elem iframe {
     height: 180px;
   }

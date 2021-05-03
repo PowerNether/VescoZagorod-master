@@ -106,9 +106,11 @@ if ($('.villageSlider').length) {
     nextButton: '.object__next',
     nested: 'inner',
     mouseDrag: true,
+    center: true,
     responsive: {
       425: {
         fixedWidth: 304,
+        center: false,
       }
     }
   });
@@ -124,9 +126,11 @@ if ($('.similarSlider').length) {
     nextButton: '.object__next',
     nested: 'inner',
     mouseDrag: true,
+    center: true,
     responsive: {
       425: {
         fixedWidth: 304,
+        center: false,
       }
     }
   });
@@ -142,9 +146,11 @@ if ($('.aroundSlider').length) {
     nextButton: '.object__next',
     nested: 'inner',
     mouseDrag: true,
+    center: true,
     responsive: {
       425: {
         fixedWidth: 304,
+        center: false,
       }
     }
   });
