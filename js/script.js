@@ -98,7 +98,7 @@ if ($('.object__sliderInner').length) {
 if ($('.villageSlider').length) {
   var villageSlider = tns({
     container: '.villageSlider',
-    fixedWidth: 304,
+    fixedWidth: 280,
     items: 3.5,
     gutter: 32,
     nav: false,
@@ -106,12 +106,17 @@ if ($('.villageSlider').length) {
     nextButton: '.object__next',
     nested: 'inner',
     mouseDrag: true,
+    responsive: {
+      425: {
+        fixedWidth: 304,
+      }
+    }
   });
 };
 if ($('.similarSlider').length) {
   var similarSlider = tns({
     container: '.similarSlider',
-    fixedWidth: 304,
+    fixedWidth: 280,
     items: 3.5,
     gutter: 32,
     nav: false,
@@ -119,12 +124,17 @@ if ($('.similarSlider').length) {
     nextButton: '.object__next',
     nested: 'inner',
     mouseDrag: true,
+    responsive: {
+      425: {
+        fixedWidth: 304,
+      }
+    }
   });
 };
 if ($('.aroundSlider').length) {
   var aroundSlider = tns({
     container: '.aroundSlider',
-    fixedWidth: 304,
+    fixedWidth: 280,
     items: 3.5,
     gutter: 32,
     nav: false,
@@ -132,6 +142,11 @@ if ($('.aroundSlider').length) {
     nextButton: '.object__next',
     nested: 'inner',
     mouseDrag: true,
+    responsive: {
+      425: {
+        fixedWidth: 304,
+      }
+    }
   });
 };
 
